@@ -5,3 +5,6 @@ A professional SAP UI5 Freestyle application built to manage employee records. T
 Experience the application in action!
 
 * 📥 **[Click Here to Download & Watch the Demo Video](https://github.com/SASIPKP/Fiori-Employee-Management-Free-Style/raw/refs/heads/main/Employee%20Management_Fiori_Freestyle.mp4)**
+
+### 📸 Visuals
+Check out the application screenshots here: [View Screenshots](./Screenshots)
