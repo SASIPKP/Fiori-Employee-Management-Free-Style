@@ -76,6 +76,23 @@
                     <uxap:ObjectPageSubSection>
                         <f:SimpleForm layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1" editable="true">
                             <f:content>
+                                <Label text="Job Title"/>
+                                <VBox>
+                                    <Input value="{employees>JobTitle}" visible="{ui>/isEditable}"/>
+                                    <Text text="{employees>JobTitle}" visible="{= !${ui>/isEditable} }"/>
+                                </VBox>
+
+                                <Label text="Department"/>
+                                <VBox>
+                                    <Select selectedKey="{employees>Department}" 
+                                            visible="{ui>/isEditable}"
+                                            items="{departments>/Departments}"
+                                            width="100%">
+                                        <core:Item key="{departments>key}" text="{departments>text}"/>
+                                    </Select>
+                                    <Text text="{employees>Department}" visible="{= !${ui>/isEditable} }"/>
+                                </VBox>
+
                                 <Label text="Join Date"/>
                                 <VBox>
                                     <DatePicker
@@ -94,17 +111,6 @@
                                         <core:Item key="Resigned" text="Resigned"/>
                                     </Select>
                                     <Text text="{employees>Status}" visible="{= !${ui>/isEditable} }"/>
-                                </VBox>
-
-                                <Label text="Department"/>
-                                <VBox>
-                                    <Select selectedKey="{employees>Department}" 
-                                            visible="{ui>/isEditable}"
-                                            items="{departments>/Departments}"
-                                            width="100%">
-                                        <core:Item key="{departments>key}" text="{departments>text}"/>
-                                    </Select>
-                                    <Text text="{employees>Department}" visible="{= !${ui>/isEditable} }"/>
                                 </VBox>
                             </f:content>
                         </f:SimpleForm>
