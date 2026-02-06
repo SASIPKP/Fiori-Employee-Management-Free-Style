@@ -8,3 +8,17 @@ Experience the application in action!
 
 ### 📸 Visuals
 Check out the application screenshots here: [View Screenshots](./Screenshots)
+
+---
+
+## 🎨 Design & UX Research
+I followed a User-Centered Design (UCD) approach to ensure the application is intuitive and efficient for HR Managers.
+
+* 📄 **[View Full UX Case Study & Wireframes (PDF)](./Employee_Management_Fiori_UX_Case_Study.pdf)**
+
+### Key Highlights from Case Study:
+* **User Persona:** Sarah Williams (HR Manager)
+* **Core Challenge:** Fragmented employee data and slow manual updates.
+* **Result:** A centralized SAP Fiori dashboard reducing task time for HR staff.
+
+---
