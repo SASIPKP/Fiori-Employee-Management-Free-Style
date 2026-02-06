@@ -1,2 +1,2 @@
 # Fiori-Employee-Management-Free-Style
-A full-stack Employee Management application built using SAP UI5 (Free Style), SAP Cloud Application Programming Model (CAP), and OData v4. Features include CRUD operations, data filtering, and a responsive Fiori UI.
+A professional SAP UI5 Freestyle application built to manage employee records. This project demonstrates frontend expertise using JSON Models for data binding, XML Views for layout, and custom Controllers for application logic, following the SAP Fiori design guidelines.
