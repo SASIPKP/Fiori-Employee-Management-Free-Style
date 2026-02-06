@@ -1,0 +1,85 @@
+{
+  "_version": "1.81.0",
+  "sap.app": {
+    "id": "com.demo.employee.employeemanagement",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}"
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.144.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.demo.employee.employeemanagement.i18n.i18n"
+        }
+      },
+      "employees": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/employees.json"
+      },
+      "departments": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/departments.json"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "com.demo.employee.employeemanagement.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+        "name": "EmployeeList",
+        "pattern": "",
+        "target": "EmployeeList"
+    },
+    {
+        "name": "EmployeeCreate", 
+        "pattern": "employee/create",
+        "target": "EmployeeCreate"
+    },
+    {
+        "name": "EmployeeDetail",
+        "pattern": "employee/{employeeId}",
+        "target": "EmployeeDetail"
+    }
+      ],
+      "targets": {
+        "EmployeeList": {
+          "viewName": "EmployeeList",
+          "viewLevel": 1
+        },
+        "EmployeeDetail": {
+          "viewName": "EmployeeDetail",
+          "viewLevel": 2
+        },
+        "EmployeeCreate": {
+          "viewName": "CreateEmployee",
+          "viewLevel": 3
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.demo.employee.employeemanagement.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

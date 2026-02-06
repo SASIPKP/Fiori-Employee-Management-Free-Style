@@ -1,0 +1,224 @@
+{
+  "Employees": [
+    {
+      "EmpId": "1001",
+      "Name": "John Doe",
+      "Email": "john.doe@company.com",
+      "JobTitle": "Senior Software Engineer",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2023-04-15",
+      "Salary": "120000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1002",
+      "Name": "Haylie Bergson",
+      "Email": "bergson@company.com",
+      "JobTitle": "HR Consultant",
+      "Department": "HR",
+      "Status": "Active",
+      "StartDate": "2024-01-10",
+      "Salary": "95000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1003",
+      "Name": "Allison Culhane",
+      "Email": "allison@company.com",
+      "JobTitle": "UX Designer",
+      "Department": "Design",
+      "Status": "On Leave",
+      "StartDate": "2024-01-20",
+      "Salary": "88000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1004",
+      "Name": "Marley Press",
+      "Email": "marley@company.com",
+      "JobTitle": "Project Manager",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2024-10-24",
+      "Salary": "135000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1005",
+      "Name": "Makenna Geidt",
+      "Email": "makenna@company.com",
+      "JobTitle": "Data Analyst",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2024-10-25",
+      "Salary": "75000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1006",
+      "Name": "Brandon Botosh",
+      "Email": "brandon@company.com",
+      "JobTitle": "QA Engineer",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2024-04-07",
+      "Salary": "82000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1007",
+      "Name": "Marilyn Siphron",
+      "Email": "marilyn92@company.com",
+      "JobTitle": "Product Owner",
+      "Department": "Product",
+      "Status": "Active",
+      "StartDate": "2024-01-11",
+      "Salary": "150000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1008",
+      "Name": "Rayna Korsgaard",
+      "Email": "rayna@company.com",
+      "JobTitle": "Recruiter",
+      "Department": "HR",
+      "Status": "On Leave",
+      "StartDate": "2022-04-22",
+      "Salary": "65000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1009",
+      "Name": "Emerson Culhane",
+      "Email": "emerson@company.com",
+      "JobTitle": "DevOps Engineer",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2020-03-04",
+      "Salary": "115000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1010",
+      "Name": "Emery Dokidis",
+      "Email": "emery@company.com",
+      "JobTitle": "Creative Lead",
+      "Department": "Design",
+      "Status": "Resigned",
+      "StartDate": "2020-10-05",
+      "Salary": "98000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1011",
+      "Name": "Jasper Thorne",
+      "Email": "thorne@company.com",
+      "JobTitle": "Security Specialist",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2021-06-12",
+      "Salary": "125000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1012",
+      "Name": "Luciana Rossi",
+      "Email": "luciana.r@company.com",
+      "JobTitle": "Talent Acquisition",
+      "Department": "HR",
+      "Status": "Active",
+      "StartDate": "2022-09-05",
+      "Salary": "70000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1013",
+      "Name": "Kiran Patel",
+      "Email": "kiran.p@company.com",
+      "JobTitle": "Database Admin",
+      "Department": "IT",
+      "Status": "On Leave",
+      "StartDate": "2023-11-30",
+      "Salary": "105000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1014",
+      "Name": "Elena Vance",
+      "Email": "elena.v@company.com",
+      "JobTitle": "Graphic Designer",
+      "Department": "Design",
+      "Status": "Active",
+      "StartDate": "2024-02-14",
+      "Salary": "62000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1015",
+      "Name": "Marcus Wright",
+      "Email": "wright@company.com",
+      "JobTitle": "Solutions Architect",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2019-12-01",
+      "Salary": "180000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1016",
+      "Name": "Sora Tanaka",
+      "Email": "sora@company.com",
+      "JobTitle": "Backend Developer",
+      "Department": "IT",
+      "Status": "Resigned",
+      "StartDate": "2022-05-18",
+      "Salary": "90000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1017",
+      "Name": "Isabella Quinn",
+      "Email": "quinn@company.com",
+      "JobTitle": "Marketing Manager",
+      "Department": "Marketing",
+      "Status": "Active",
+      "StartDate": "2023-08-22",
+      "Salary": "110000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1018",
+      "Name": "Liam O'Connor",
+      "Email": "liam@company.com",
+      "JobTitle": "Financial Analyst",
+      "Department": "Finance",
+      "Status": "Active",
+      "StartDate": "2024-03-10",
+      "Salary": "95000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1019",
+      "Name": "Nadia Volkov",
+      "Email": "volkov@company.com",
+      "JobTitle": "System Administrator",
+      "Department": "IT",
+      "Status": "On Leave",
+      "StartDate": "2021-10-10",
+      "Salary": "100000",
+      "Currency": "INR"
+    },
+    {
+      "EmpId": "1020",
+      "Name": "Omar Hassan",
+      "Email": "omar@company.com",
+      "JobTitle": "Full Stack Developer",
+      "Department": "IT",
+      "Status": "Active",
+      "StartDate": "2023-01-05",
+      "Salary": "118000",
+      "Currency": "INR"
+    }
+  ]
+}

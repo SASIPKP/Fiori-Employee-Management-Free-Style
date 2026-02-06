@@ -1,0 +1,86 @@
+<mvc:View
+    controllerName="com.demo.employee.employeemanagement.controller.EmployeeList"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    displayBlock="true">
+
+    <f:DynamicPage id="dynamicPageId" headerExpanded="false">
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <Title text="{worklistView>/tableTitle}" />
+                </f:heading>
+                <f:actions>
+                    <SearchField
+                        id="searchField"
+                        width="16rem"
+                        search=".onSearch"
+                        placeholder="Search by Name or ID..." />
+                    <Button
+                        id="filterButton"
+                        icon="sap-icon://filter"
+                        type="Transparent"
+                        press=".onOpenFilterDialog" />
+                    <Button
+                        text="Create New"
+                        type="Emphasized"
+                        press=".onCreateEmployee" />
+                </f:actions>
+            </f:DynamicPageTitle>
+        </f:title>
+
+        <f:content>
+            <Table
+                id="idEmployeeTable"
+                items="{employees>/Employees}"
+                updateFinished=".onTableUpdateFinished"
+                sticky="HeaderToolbar,ColumnHeaders,InfoToolbar">
+                
+                <infoToolbar>
+                    <OverflowToolbar id="idFilterInfoToolbar" visible="false" active="true" press=".onOpenFilterDialog">
+                        <Title id="idFilterInfoText" text="No filters applied" level="H6" />
+                        <ToolbarSpacer />
+                        <Button 
+                            icon="sap-icon://decline" 
+                            type="Transparent" 
+                            press=".onClearFilters" 
+                            tooltip="Clear all filters" />
+                    </OverflowToolbar>
+                </infoToolbar>
+
+                <columns>
+                    <Column width="6rem">
+                        <Text text="ID" />
+                    </Column>
+                    <Column minScreenWidth="Tablet" demandPopin="true">
+                        <Text text="Name &amp; Email" />
+                    </Column>
+                    <Column minScreenWidth="Tablet" demandPopin="true">
+                        <Text text="Role &amp; Department" />
+                    </Column>
+                    <Column minScreenWidth="Desktop" demandPopin="true">
+                        <Text text="Join Date" />
+                    </Column>
+                    <Column width="10rem" hAlign="End">
+                        <Text text="Status" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press=".onItemPress">
+                        <cells>
+                            <Text text="{employees>EmpId}" />
+                            <ObjectIdentifier title="{employees>Name}" text="{employees>Email}" />
+                            <ObjectIdentifier title="{employees>JobTitle}" text="{employees>Department}" />
+                            <Text text="{employees>StartDate}" />
+                            <ObjectStatus
+                                text="{employees>Status}"
+                                state="{= ${employees>Status} === 'Active' ? 'Success' : ${employees>Status} === 'On Leave' ? 'Warning' : 'Error'}"
+                                icon="{= ${employees>Status} === 'Active' ? 'sap-icon://sys-enter-2' : ${employees>Status} === 'On Leave' ? 'sap-icon://alert' : 'sap-icon://error'}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

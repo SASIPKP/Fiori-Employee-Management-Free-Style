@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="com.demo.employee.employeemanagement.controller.CreateEmployee"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page title="&#160;&#160;&#160;Add New Employee">
+        <content>
+            <f:SimpleForm 
+                id="createForm" 
+                editable="true" 
+                layout="ResponsiveGridLayout"
+                labelSpanL="3" labelSpanM="3"
+                emptySpanL="4" emptySpanM="4"
+                columnsL="1" columnsM="1">
+                <f:content>
+                    <core:Title text="Personal Information" />
+                    
+                    <Label text="Employee ID" />
+                    <Input value="{newEmployee>/EmpId}" placeholder="Leave blank to auto-generate" />
+
+                    <Label text="Full Name" required="true"/>
+                    <Input value="{newEmployee>/Name}" placeholder="Enter full name" />
+
+                    <Label text="Email" required="true" />
+                    <Input value="{newEmployee>/Email}" type="Email" placeholder="Enter email id" />
+
+                    <core:Title text="Job Details" />
+                    
+                    <Label text="Job Title" required="true" />
+                    <Input value="{newEmployee>/JobTitle}" placeholder="e.g. Senior Software Engineer" />
+
+                    <Label text="Department" required="true" />
+                    <Select selectedKey="{newEmployee>/Department}" items="{departments>/Departments}">
+                        <core:Item key="{departments>key}" text="{departments>text}"/>
+                    </Select>
+
+                    <Label text="Start Date" required="true" />
+                    <DatePicker value="{newEmployee>/StartDate}" valueFormat="yyyy-MM-dd" displayFormat="long"/>
+
+                    <Label text="Status"/>
+                    <Select selectedKey="{newEmployee>/Status}">
+                        <core:Item key="Active" text="Active"/>
+                        <core:Item key="On Leave" text="On Leave"/>
+                        <core:Item key="Resigned" text="Resigned"/>
+                    </Select>
+
+                    <core:Title text="Compensation" />
+                    
+                    <Label text="Monthly Salary"/>
+                    <Input value="{newEmployee>/Salary}" type="Number" description="{newEmployee>/Currency}" />
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                <Button text="Save" type="Emphasized" press="onSave"/>
+                <Button text="Cancel" press="onNavBack"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

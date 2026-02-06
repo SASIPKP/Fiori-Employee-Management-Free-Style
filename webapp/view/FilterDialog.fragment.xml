@@ -1,0 +1,34 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <ViewSettingsDialog
+        title="Filter Employees"
+        confirm=".onConfirmFilter">
+        <filterItems>
+            <ViewSettingsFilterItem
+                text="Status"
+                key="Status"
+                multiSelect="true">
+                <items>
+                    <ViewSettingsItem text="Active" key="Active" />
+                    <ViewSettingsItem text="On Leave" key="On Leave" />
+                    <ViewSettingsItem text="Resigned" key="Resigned" />
+                </items>
+            </ViewSettingsFilterItem>
+
+            <ViewSettingsFilterItem
+                text="Department"
+                key="Department"
+                multiSelect="true">
+                <items>
+                    <ViewSettingsItem text="Design" key="Design" />
+                    <ViewSettingsItem text="Finance" key="Finance" />
+                    <ViewSettingsItem text="HR" key="HR" />
+                    <ViewSettingsItem text="IT" key="IT" />
+                    <ViewSettingsItem text="Marketing" key="Marketing" />
+                    <ViewSettingsItem text="Product" key="Product" />
+                </items>
+            </ViewSettingsFilterItem>
+        </filterItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>
